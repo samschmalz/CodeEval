@@ -4,7 +4,7 @@ for test in test_cases:
     if test == "":
         continue
     else:
-        items = test.split()
+        items = test.split(",")
         n = items[0]
         m = items[1]
         mod = (n / float(m) - n / m) * m
