@@ -1,0 +1,13 @@
+import sys
+test_cases = open(sys.argv[1], 'r')
+for test in test_cases:
+    if test == "":
+		continue
+	else:
+		items = test.split()
+		n = items[0]
+		m = items[1]
+		mod = (n / float(m) - n / m) * m
+		print mod
+
+test_cases.close()
