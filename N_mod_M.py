@@ -5,8 +5,8 @@ for test in test_cases:
         continue
     else:
         items = test.split(",")
-        n = items[0]
-        m = items[1]
+        n = int(items[0])
+        m = int(items[1])
         mod = (n / float(m) - n / m) * m
         print mod
 
