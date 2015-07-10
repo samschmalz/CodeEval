@@ -5,9 +5,10 @@ for test in test_cases:
         continue
     else:
         sum = 0
-        for letter in test:
-            num = int(letter)
-            sum += num
+        test = int(test)
+        while test != 0:
+            sum += test % 10
+            test /= 10
         print sum
 
 test_cases.close()
